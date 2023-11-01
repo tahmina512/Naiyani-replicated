@@ -54,7 +54,7 @@
   left: 60px;
   font-family: "Calibri-Bold", sans-serif;
   // font-size: 26px;
-  font-size: clamp(2.8rem, 3.5vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 2.2rem);
   letter-spacing: 1px;
   animation: appearButtons 3s ease forwards;
 }
@@ -67,11 +67,6 @@
   }
 }
 .banner-button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // background-color: white;
-  // box-shadow: 4px 4px black;
   text-align: center;
   height: 60px;
   width: 220px;
@@ -79,8 +74,8 @@
   border-radius: 50px;
   cursor: pointer;
   font-family: "Calibri-Bold", sans-serif;
-  // line-height: 1;
-  font-size: clamp(2.7rem, 3.5vw, 3rem);
+  //  line-height: 1;
+  font-size: clamp(2.1rem, 2.5vw, 2.2rem);
   white-space: normal;
 }
 .banner-button:hover {

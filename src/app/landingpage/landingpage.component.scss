@@ -334,11 +334,7 @@
   animation: change-color 2s linear forwards;
 }
 .gradient {
-   display: inline-block; /* This makes the span a block-level element */
-    text-align: center;   /* Horizontally center text */
-    line-height: 1;       /* Vertically center text */
-    height: 100%; 
-    // background-color: bisque;
+  // background-color: bisque;
   animation: change-color 2s linear forwards;
 }
 
@@ -440,7 +436,7 @@
 
 @media screen and (orientation: landscape) {
   .input-container {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   .move-up {
     animation: moveUpAnimationLandScape 2.7s ease forwards;

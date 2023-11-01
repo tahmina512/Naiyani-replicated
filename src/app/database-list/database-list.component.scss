@@ -10,7 +10,7 @@
   top: 70px;
   left: 60px;
   font-family: "Calibri-Bold", sans-serif;
-  font-size: clamp(2.5rem, 3.5vw, 2.8rem);
+  font-size: clamp(2rem, 2.5vw, 2.2rem);
   letter-spacing: 1px;
   animation: appearButtons 3s ease forwards;
 }
@@ -66,7 +66,7 @@
   font-family: "Calibri-Bold", sans-serif;
   font-weight: 400;
   line-height: 1;
-  font-size: clamp(2.5rem, 3.5vw, 3rem);
+  font-size: clamp(2.1rem, 2.5vw, 2.2rem);
   white-space: normal; /* Allow text to wrap */
   box-shadow: none !important;
   pointer-events: none;
@@ -108,7 +108,7 @@
   // font-family: "Raleway", sans-serif;
   font-family: "Calibri-Bold", sans-serif;
   // font-size: 20px;
-  font-size: clamp(2rem, 2.5vw, 2.4rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   font-weight: bold;
   padding: 20px 15px;
   width: auto;
