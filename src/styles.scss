@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ElaineSans-Regular";
+  src: url("/assets/fonts/ElaineSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Calibri-Bold";
+  font-weight: 400;
+  src: url("/assets/calibri-font/calibrib.ttf") format("truetype"),
+    url("/assets/calibri-font/calibrib.ttf") format("woff"); /* Modern Browsers */
+}
+@font-face {
+  font-family: "Calibri-Regular";
+
+  src: url("/assets/calibri-font/Calibri-Regular.ttf") format("truetype"),
+    url("/assets/calibri-font/Calibri-Regular.ttf") format("woff"); /* Modern Browsers */
+}

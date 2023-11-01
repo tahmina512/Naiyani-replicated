@@ -1,0 +1,458 @@
+.outer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  width: auto;
+}
+
+.filter-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: none;
+  // padding: 7px 5px;
+  cursor: pointer;
+  background-color: #595959;
+  box-shadow: none !important;
+}
+
+.svg-filter {
+  // background-color: red;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: #595959;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-dropdown {
+  z-index: 2;
+}
+.filter-dropdown a {
+  color: black;
+  text-align: center;
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 18px;
+  white-space: nowrap; /* Prevent line breaks */
+  text-decoration: none;
+}
+.services {
+  width: 380px;
+  height: 128px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  background-color: transparent;
+  width: 380px;
+  border: 2px solid transparent;
+  z-index: 1;
+  // background-color: red;
+}
+// .center-item
+// {
+// display: flex;
+// // background-color: red;
+// }
+.text-animation {
+  // margin-left: 46px;
+  // margin-left: 12.5%;
+  // margin-right: 15px;
+  // margin-top: 20px;
+  font-family: "ElaineSans-Regular", sans-serif;
+  font-size: 58px;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  padding-right: 0;
+  animation: linearwipe 2s steps(200, end);
+
+  // background-color: yellow;
+}
+@keyframes linearwipe {
+  from {
+    width: 0;
+  }
+}
+.show-border {
+  border-color: black;
+}
+.services .box {
+  height: 128px;
+  width: 380px;
+  align-items: center;
+}
+
+.services .box .inner {
+  height: 128px;
+  width: 380px;
+  position: relative;
+}
+
+.services .box .inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.8s ease;
+  animation: expandBorder1 2.72s forwards;
+}
+
+.services .box .inner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  border-top: 2px solid transparent;
+  background-color: transparent;
+
+  animation: expandBorder1 2.72s forwards;
+}
+
+.services .box1 {
+  display: flex;
+  height: 128px;
+  width: 380px;
+  transform: translateY(-128px);
+}
+
+.services .box1 .inner1 {
+  position: relative;
+  height: 128px;
+  width: 380px;
+}
+
+.services .box1 .inner1::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 2px solid transparent;
+  transition: 0.8s ease;
+  animation: expandBorder2 2.72s forwards;
+  animation-delay: 2.72s;
+}
+.services .box1 .inner1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  background-color: transparent;
+
+  animation: expandBorder2 2.72s forwards;
+  animation-delay: 2.72s;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 200px;
+  margin-top: -10px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 210px;
+  // background-color: yellow;
+  margin-top: 45px;
+  // background-color: red;
+}
+.expanding-input {
+  position: relative;
+  width: 190px;
+  //   width: 100%; /* Use 100% width to match the button */
+  /* Use 100% height to match the button */
+  //   margin-top: -40px;
+  font-size: 24px;
+  font-family: "Calibri-Regular", sans-serif;
+  // text-align: center;
+  // padding: 0px 40px;
+  margin-left: 50px;
+  // background-color: yellow;
+  border: none;
+  outline: none;
+  caret-color: black;
+}
+.icon-background {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #595959; /* Change this to the background color you want */
+  border-radius: 50%; /* Makes the background circular */
+  height: 52px;
+  width: 52px;
+  margin-left: -10px;
+  // height: 48px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+.btn-text {
+  font-family: "Calibri-Regular", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-left: 30%;
+}
+.white-bg {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+.gradient-button {
+  //   padding: 15px 60px;
+  //   border: solid 2px white;
+  //   border-radius: 25px
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  border: none;
+  background-color: black;
+  box-shadow: 3px 3px 4px rgba(26, 25, 25, 0.25);
+  cursor: pointer;
+  margin-top: 15px;
+  height: 54px;
+  width: 250px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-icons {
+  animation: appearButtons 8s ease forwards;
+}
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  background-color: #595959;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: none !important;
+}
+.svg-container {
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  background-color: #595959;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-animation .arrow-path {
+  animation: revealArrow 2.5s linear forwards infinite;
+  animation-delay: 3s;
+  // clip-path: inset(0px 100% 0px 0px);
+  transform-origin: left;
+}
+
+@keyframes revealArrow {
+  0% {
+    fill: white;
+    stroke: white;
+    clip-path: inset(0px 100% 0px 0px);
+  }
+  100% {
+    fill: white;
+    stroke: white;
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+
+.move-up {
+  animation: moveUpAnimation 2.7s ease forwards;
+  transform-origin: center bottom;
+}
+.moveLines {
+  margin-top: -128px;
+}
+@keyframes expandBorder1 {
+  0% {
+    width: 0;
+
+    border-color: transparent;
+  }
+  100% {
+    width: 100%;
+
+    border-color: black;
+  }
+}
+@keyframes expandBorder2 {
+  0% {
+    height: 0;
+    border-color: transparent;
+  }
+  100% {
+    height: 128px;
+    border-color: black;
+  }
+
+  from {
+    width: 0;
+  }
+}
+.gradient1 {
+  margin-left: 10px;
+  animation: change-color 2s linear forwards;
+}
+.gradient {
+   display: inline-block; /* This makes the span a block-level element */
+    text-align: center;   /* Horizontally center text */
+    line-height: 1;       /* Vertically center text */
+    height: 100%; 
+    // background-color: bisque;
+  animation: change-color 2s linear forwards;
+}
+
+@keyframes change-color {
+  0% {
+    color: rgb(220, 220, 220);
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+@keyframes moveUpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-128px);
+  }
+}
+
+.buttons-container {
+  text-align: center;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    // display: flex;
+    // flex-direction: column;
+    //  justify-content: none;
+    width: 300px;
+    height: 100px;
+    // background-color: aqua;
+  }
+
+  .text-animation {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .position {
+    width: 300px;
+  }
+  .services {
+    width: 300px;
+    height: 100px;
+  }
+  .moveLines {
+    margin-top: -100px;
+  }
+  .services .box {
+    width: 300px;
+    height: 100px;
+  }
+
+  .services .box .inner {
+    width: 300px;
+    height: 100px;
+  }
+
+  .services .box1 {
+    width: 300px;
+    height: 100px;
+    transform: translateY(-100px);
+  }
+  .services .box1 .inner1 {
+    width: 300px;
+    height: 100px;
+  }
+
+  .services .box1 .inner1::before {
+    animation: expandBorderLine2 2.72s forwards;
+    animation-delay: 2.72s;
+  }
+  .services .box1 .inner1::after {
+    animation: expandBorderLine2 2.72s forwards;
+    animation-delay: 2.72s;
+  }
+
+  @keyframes expandBorderLine2 {
+    0% {
+      height: 0;
+      border-color: transparent;
+    }
+    100% {
+      height: 100px;
+      border-color: black;
+    }
+  }
+  .filter-dropdown {
+    padding: 8px 12px;
+  }
+  .filter-dropdown a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .input-container {
+    padding-bottom: 10px;
+  }
+  .move-up {
+    animation: moveUpAnimationLandScape 2.7s ease forwards;
+    transform-origin: center bottom;
+  }
+
+  @keyframes moveUpAnimationLandScape {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-80px);
+    }
+  }
+}
