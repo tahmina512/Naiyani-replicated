@@ -54,7 +54,7 @@
   left: 60px;
   font-family: "Calibri-Bold", sans-serif;
   // font-size: 26px;
-  font-size: clamp(2rem, 2.5vw, 2.2rem);
+  font-size: clamp(2.5rem, 3.5vw, 2.8rem);
   letter-spacing: 1px;
   animation: appearButtons 3s ease forwards;
 }
@@ -74,9 +74,10 @@
   border-radius: 50px;
   cursor: pointer;
   font-family: "Calibri-Bold", sans-serif;
-  //  line-height: 1;
-  font-size: clamp(2.1rem, 2.5vw, 2.2rem);
+  line-height: 1;
+  font-size: clamp(2.6rem, 3.5vw, 2.9rem);
   white-space: normal;
+  background-color: white;
 }
 .banner-button:hover {
   background-color: black;

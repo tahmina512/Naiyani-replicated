@@ -1,12 +1,12 @@
 .outer-container {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   margin: 0 auto;
-  width: auto;
+  // width: auto;
 }
 
 .filter-icon-container {
@@ -37,6 +37,7 @@
 
 .filter-dropdown {
   z-index: 2;
+  // background-color: red;
 }
 .filter-dropdown a {
   color: black;
@@ -180,10 +181,10 @@
   justify-content: center;
   text-align: center;
   height: 210px;
-  // background-color: yellow;
+  background-color: white;
   margin-top: 45px;
-  // background-color: red;
 }
+
 .expanding-input {
   position: relative;
   width: 190px;
@@ -195,10 +196,14 @@
   // text-align: center;
   // padding: 0px 40px;
   margin-left: 50px;
-  // background-color: yellow;
+  background-color: white;
   border: none;
   outline: none;
   caret-color: black;
+}
+.expanding-input:focus {
+  background-color: transparent !important; /* Set the background to transparent */
+  outline: none !important; /* Remove the outline */
 }
 .icon-background {
   position: fixed;
@@ -243,7 +248,9 @@
   width: 250px;
   border-radius: 30px;
   margin-left: 10px;
+  outline: none;
 }
+
 @keyframes appearButtons {
   0% {
     opacity: 0;
@@ -330,7 +337,7 @@
   }
 }
 .gradient1 {
-  margin-left: 10px;
+  margin-left: 10.5px;
   animation: change-color 2s linear forwards;
 }
 .gradient {
@@ -376,6 +383,10 @@
     width: 100%;
     font-size: 40px;
     font-weight: bold;
+  }
+  .gradient1 {
+    margin-left: 10.5px;
+    animation: change-color 2s linear forwards;
   }
   .position {
     width: 300px;

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -12,10 +12,16 @@ import { CardListComponent } from './card-list/card-list.component';
 import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
-  declarations: [AppComponent, LandingpageComponent, DatabaseButtonComponent, DatabaseListComponent, DatabaseTableComponent, CardListComponent],
+  declarations: [
+    AppComponent,
+    LandingpageComponent,
+    DatabaseButtonComponent,
+    DatabaseListComponent,
+    DatabaseTableComponent,
+    CardListComponent,
+  ],
   imports: [
     BrowserModule,
-    HammerModule,
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
