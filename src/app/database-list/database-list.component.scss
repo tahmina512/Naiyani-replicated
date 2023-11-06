@@ -70,7 +70,7 @@
   font-size: clamp(2.6rem, 3.5vw, 2.9rem);
 
   white-space: normal; /* Allow text to wrap */
-  box-shadow: none !important;
+  box-shadow: none;
   pointer-events: none;
   animation: appearButtons 3s ease forwards;
 }
