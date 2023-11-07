@@ -47,10 +47,7 @@
   white-space: nowrap; /* Prevent line breaks */
   text-decoration: none;
 }
-.services {
-  width: 380px;
-  height: 128px;
-}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -61,7 +58,6 @@
   width: 380px;
   border: 2px solid transparent;
   z-index: 1;
-  // background-color: red;
 }
 // .center-item
 // {
@@ -91,6 +87,10 @@
 }
 .show-border {
   border-color: black;
+}
+.services {
+  width: 380px;
+  height: 128px;
 }
 .services .box {
   height: 128px;

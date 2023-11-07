@@ -37,6 +37,7 @@ export class LandingpageComponent implements OnInit {
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;
+     
       myDiv.classList.add('show-border');
     }, 9500);
     // setTimeout(() => {
