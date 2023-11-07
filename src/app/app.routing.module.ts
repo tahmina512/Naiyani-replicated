@@ -5,6 +5,7 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DatabaseTableComponent } from './database-table/database-table.component';
 import { CardListComponent } from './card-list/card-list.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -14,6 +15,10 @@ const appRoutes: Routes = [
   {
     path: 'card',
     component: CardListComponent,
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent,
   },
 ];
 @NgModule({

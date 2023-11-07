@@ -10,6 +10,7 @@ import { DatabaseListComponent } from './database-list/database-list.component';
 import { DatabaseTableComponent } from './database-table/database-table.component';
 import { CardListComponent } from './card-list/card-list.component';
 import { AppRoutingModule } from './app.routing.module';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app.routing.module';
     DatabaseListComponent,
     DatabaseTableComponent,
     CardListComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

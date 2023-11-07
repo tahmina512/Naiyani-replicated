@@ -30,28 +30,48 @@
   animation: appearButtons 3s ease forwards;
   box-shadow: none;
 }
-.hover-effect:hover {
-  // box-shadow: none;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-}
 .filter-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   top: 20px;
   right: 15px;
   height: 52px;
   width: 52px;
-
   border-radius: 50%;
   border: none;
-  padding: 7px 5px;
+  // padding: 7px 5px;
   cursor: pointer;
   background-color: #595959;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  animation: appearButtons 3s ease forwards;
+  box-shadow: none !important;
+}
+
+.hover-effect:hover {
+  // box-shadow: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.svg-filter {
+  // background-color: red;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: #595959;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-dropdown {
+  z-index: 2;
+  // background-color: red;
+}
+.filter-dropdown a {
+  color: black;
+  // text-align: center;
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 18px;
+  white-space: nowrap; /* Prevent line breaks */
+  text-decoration: none;
 }
 
 .banner-button {

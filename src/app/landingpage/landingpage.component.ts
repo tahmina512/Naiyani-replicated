@@ -37,7 +37,7 @@ export class LandingpageComponent implements OnInit {
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;
-     
+
       myDiv.classList.add('show-border');
     }, 9500);
     // setTimeout(() => {
@@ -80,5 +80,8 @@ export class LandingpageComponent implements OnInit {
         this.isPasswordVisible = false; // Hide the input box
       }
     }
+  }
+  signupPage() {
+    this.router.navigate(['/sign-up']);
   }
 }

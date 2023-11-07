@@ -149,7 +149,7 @@
     [matMenuTriggerFor]="appMenu"
     xPosition="before"
     yPosition="below"
-    class="filter-icon-container shadow-effect"
+    class="filter-icon-container hover-effect"
     *ngIf="showIcons"
     [ngClass]="{ 'show-icons': showIcons }"
   >
@@ -199,8 +199,8 @@
   </button>
 
   <mat-menu #appMenu="matMenu">
-    <button class="filter-dropdown" mat-menu-item>
-      <a href="#">Make an account</a>
+    <button class="filter-dropdown" mat-menu-item (click)="signupPage()">
+      <a >Create Account</a>
     </button>
     <button class="filter-dropdown" mat-menu-item><a href="#">Help</a></button>
   </mat-menu>
