@@ -19,4 +19,7 @@ export class DatabaseListComponent implements OnInit {
   bookSection() {
     this.router.navigate(['/card']);
   }
+  helpPage() {
+    this.router.navigate(['/help']);
+  }
 }

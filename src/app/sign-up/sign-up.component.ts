@@ -7,12 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./sign-up.component.scss'],
 })
 export class SignUpComponent {
-  constructor(private router: Router)
-  {
-    
+  constructor(private router: Router) {}
+  onPreviousPage() {
+    this.router.navigate(['']);
   }
-  onPreviousPage()
-  {
-this.router.navigate(['']);
+  helpPage() {
+    this.router.navigate(['/help']);
   }
 }

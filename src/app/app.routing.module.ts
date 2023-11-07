@@ -6,6 +6,7 @@ import { DatabaseListComponent } from './database-list/database-list.component';
 import { DatabaseTableComponent } from './database-table/database-table.component';
 import { CardListComponent } from './card-list/card-list.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HelpPageComponent } from './help-page/help-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -19,6 +20,11 @@ const appRoutes: Routes = [
   {
     path: 'sign-up',
     component: SignUpComponent,
+  },
+  {
+    path: 'help',
+    component: HelpPageComponent,
+    data: { returnUrl: '/' },
   },
 ];
 @NgModule({

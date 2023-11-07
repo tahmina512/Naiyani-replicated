@@ -11,4 +11,8 @@ export class CardListComponent {
   onPreviousPage() {
     this.router.navigate(['/database-list']);
   }
+  helpPage()
+  {
+    this.router.navigate(['/help']);
+  }
 }

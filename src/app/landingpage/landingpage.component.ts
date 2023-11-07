@@ -84,4 +84,7 @@ export class LandingpageComponent implements OnInit {
   signupPage() {
     this.router.navigate(['/sign-up']);
   }
+  helpPage() {
+    this.router.navigate(['/help']);
+  }
 }

@@ -200,8 +200,10 @@
 
   <mat-menu #appMenu="matMenu">
     <button class="filter-dropdown" mat-menu-item (click)="signupPage()">
-      <a >Create Account</a>
+      <a>Create Account</a>
     </button>
-    <button class="filter-dropdown" mat-menu-item><a href="#">Help</a></button>
+    <button class="filter-dropdown" mat-menu-item (click)="helpPage()">
+      <a>Help</a>
+    </button>
   </mat-menu>
 </div>

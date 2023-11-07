@@ -11,6 +11,7 @@ import { DatabaseTableComponent } from './database-table/database-table.componen
 import { CardListComponent } from './card-list/card-list.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HelpPageComponent } from './help-page/help-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     DatabaseTableComponent,
     CardListComponent,
     SignUpComponent,
+    HelpPageComponent,
   ],
   imports: [
     BrowserModule,

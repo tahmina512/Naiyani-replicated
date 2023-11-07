@@ -14,4 +14,7 @@ export class DatabaseButtonComponent {
   onNextPage() {
     this.router.navigate(['/database-list']);
   }
+  helpPage() {
+    this.router.navigate(['/help']);
+  }
 }
