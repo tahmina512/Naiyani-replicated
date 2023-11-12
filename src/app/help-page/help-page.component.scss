@@ -80,7 +80,8 @@ span {
 mat-expansion-panel {
   box-shadow: none !important; // Remove box shadow
   background-color: white;
-//  padding-bottom: 0!important;
+
+  //  padding-bottom: 0!important;
 
   // height: 8rem;
   // height: 6rem;
@@ -95,18 +96,23 @@ mat-expansion-panel-header {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+mat-expansion-panel-header.mat-expanded:hover {
+  cursor: pointer;
+}
+
 mat-panel-title {
   font-family: "Calibri-Regular", sans-serif;
   font-size: clamp(2.2rem, 3.5vw, 2.5rem);
   text-wrap: normal;
   line-height: 1;
+  color: black !important;
 }
 p {
   font-family: "Calibri-Regular", sans-serif;
   font-size: clamp(1.5rem, 3.5vw, 1.8rem);
 }
 .last-child {
-  border-radius: 0;
+  border-radius: 0 !important;
   border-bottom: 1px solid black; // Top border color
 }
 @media screen and (max-width: 768px) {
@@ -115,6 +121,12 @@ p {
   //   height: 30vh;
   //   // background-color: yellow;
   // }
+  mat-expansion-panel-header:hover {
+    padding-top: 5rem;
+  }
+  p {
+    margin-top: 15px;
+  }
 
   .banner-button {
     width: 80%;

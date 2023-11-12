@@ -32,10 +32,10 @@
 <div class="expansion-panel">
   <mat-accordion>
     <mat-expansion-panel
-      hideToggle
+      hideToggle [disabled]="true"
       #accordionPanel1
       (mouseover)="onAccordionHover(accordionPanel1, true)"
-      (mouseout)="onAccordionHover(accordionPanel1, false)"
+    
       (click)="$event.stopPropagation()"
     >
       <mat-expansion-panel-header>
@@ -57,10 +57,10 @@
     </mat-expansion-panel>
 
     <mat-expansion-panel
-      hideToggle
+      hideToggle [disabled]="true"
       #accordionPanel2
       (mouseover)="onAccordionHover(accordionPanel2, true)"
-      (mouseout)="onAccordionHover(accordionPanel2, false)"
+
     >
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -80,10 +80,10 @@
     </mat-expansion-panel>
 
     <mat-expansion-panel
-      hideToggle
-      #accordionPanel3
+      hideToggle [disabled]="true"
+      #accordionPanel3 
       (mouseover)="onAccordionHover(accordionPanel3, true)"
-      (mouseout)="onAccordionHover(accordionPanel3, false)"
+
     >
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -102,10 +102,10 @@
       </p>
     </mat-expansion-panel>
     <mat-expansion-panel class="last-child"
-      hideToggle
+      hideToggle [disabled]="true"
       #accordionPanel4
       (mouseover)="onAccordionHover(accordionPanel4, true)"
-      (mouseout)="onAccordionHover(accordionPanel4, false)"
+   
     >
       <mat-expansion-panel-header >
         <mat-panel-title>

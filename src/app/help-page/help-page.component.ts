@@ -26,9 +26,7 @@ export class HelpPageComponent {
 onAccordionHover(accordionPanel: MatExpansionPanel, isHovered: boolean) {
   if (isHovered) {
     accordionPanel.open();  // Open the panel on hover
-  } else {
-    accordionPanel.close();  // Close the panel on mouseout
-  }
+  } 
 }
   onPreviousPage() {
     this.location.back();
