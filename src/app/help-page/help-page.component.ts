@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { MatExpansionPanel } from '@angular/material/expansion';
 @Component({
   selector: 'app-help-page',
   templateUrl: './help-page.component.html',
@@ -8,22 +9,28 @@ import { Location } from '@angular/common';
 })
 export class HelpPageComponent {
   returnUrl: string;
+
   constructor(
     private location: Location,
     private route: ActivatedRoute,
     private router: Router
-  ) {
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-    console.log(this.returnUrl);
+  ) {}
+  // onAccordionHover(panel: MatExpansionPanel, isHovered: boolean) {
+  //   if (isHovered) {
+  //     panel.open();
+  //   } else {
+  //     panel.close();
+  //   }
+  // }
+
+onAccordionHover(accordionPanel: MatExpansionPanel, isHovered: boolean) {
+  if (isHovered) {
+    accordionPanel.open();  // Open the panel on hover
+  } else {
+    accordionPanel.close();  // Close the panel on mouseout
   }
+}
   onPreviousPage() {
-    // if (this.returnUrl) {
-    //   this.router.navigate([this.returnUrl]);
-    // } else {
-    //   // Handle the case where there's no returnUrl defined
-    //   // You can navigate to a default page or handle it as needed
-    //   this.router.navigate(['/']);
-    // }
     this.location.back();
   }
 }

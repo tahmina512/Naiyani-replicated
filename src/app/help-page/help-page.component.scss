@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100hv;
+  // bottom: 50px;
+  //  background-color: yellow;
 }
+
 .arrow-position {
   position: absolute;
   display: flex;
@@ -37,6 +39,7 @@
   border: 2px solid;
   border-radius: 50px;
   //   padding: 1.5rem;
+  margin-bottom: 4rem;
 
   box-shadow: none;
   font-family: "Calibri-Bold", sans-serif;
@@ -52,16 +55,6 @@ span {
   text-align: center;
   padding-left: 3.5px;
 }
-// .text-position {
-//   margin-top: 120px;
-//   // padding: 0;
-//   text-align: center;
-//   font-family: "Calibri-Bold", sans-serif;
-//   font-weight: 400;
-//   font-size: clamp(2.6rem, 3.5vw, 2.9rem);
-//   white-space: normal; /* Allow text to wrap */
-//   animation: appearButtons 3s ease forwards;
-// }
 
 @keyframes appearButtons {
   0% {
@@ -72,19 +65,62 @@ span {
   }
 }
 
+// mat-accordion {
+//   background-color: green;
+// }
+.expansion-panel {
+  height: 100vh;
+  // margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  // padding-bottom: 25px;
+  // background-color: yellow;
+}
+
+mat-expansion-panel {
+  box-shadow: none !important; // Remove box shadow
+  background-color: white;
+//  padding-bottom: 0!important;
+
+  // height: 8rem;
+  // height: 6rem;
+}
+mat-expansion-panel-header {
+  border-radius: 0;
+  // background-color: red;
+  height: auto;
+  border-top: 1px solid black; // Top border color
+  // border-bottom: 1px solid red; // Bottom border color
+  box-shadow: none;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+mat-panel-title {
+  font-family: "Calibri-Regular", sans-serif;
+  font-size: clamp(2.2rem, 3.5vw, 2.5rem);
+  text-wrap: normal;
+  line-height: 1;
+}
+p {
+  font-family: "Calibri-Regular", sans-serif;
+  font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+}
+.last-child {
+  border-radius: 0;
+  border-bottom: 1px solid black; // Top border color
+}
 @media screen and (max-width: 768px) {
+  // .banner-container {
+  //   // bottom: 50px;
+  //   height: 30vh;
+  //   // background-color: yellow;
+  // }
+
   .banner-button {
+    width: 80%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-// @media screen and (max-width: 450px) {
-//   .banner-button {
-//     // padding-left: 5px;
-//     // padding-right: 5px;
-//     white-space: normal;
-//       word-wrap: break-word;
-//   }
-// }
