@@ -12,6 +12,7 @@ import { CardListComponent } from './card-list/card-list.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HelpPageComponent } from './help-page/help-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HelpPageComponent } from './help-page/help-page.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,

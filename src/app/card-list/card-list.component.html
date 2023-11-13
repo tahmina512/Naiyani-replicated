@@ -86,25 +86,13 @@
   <div class="text-position"><span>Hello, Username</span></div>
 </div>
 
-<div class="container">
-  <mat-card class="grid">
+<div *ngIf="product.length > 0" class="container">
+  <!-- <mat-card *ngIf="product && product.length > 0" class="grid"> -->
+  <mat-card *ngFor="let product of product" class="grid">
     <mat-card-content class="card-content">
-      <div class="circle"></div>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="grid">
-    <mat-card-content class="card-content">
-      <div class="circle"></div>
-      <!-- <div class="info">
-        <div class="info-label">
-          Name:
-        </div>
-        <div class="info-value">Your Name</div>
+      <div class="circle">
+        <img [src]="product.Image_Link" alt="" class="show-image" />
       </div>
-      <div class="info">
-        <div class="info-label">Name:</div>
-        <div class="info-value">Your Name</div>
-      </div> -->
     </mat-card-content>
   </mat-card>
 </div>
