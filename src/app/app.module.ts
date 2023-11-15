@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app.routing.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HelpPageComponent } from './help-page/help-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PolicyComponent } from './policy/policy.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardListComponent,
     SignUpComponent,
     HelpPageComponent,
+    PolicyComponent,
+    TermsComponent,
   ],
   imports: [
     BrowserModule,

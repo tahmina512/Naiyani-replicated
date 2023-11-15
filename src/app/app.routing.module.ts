@@ -7,6 +7,8 @@ import { DatabaseTableComponent } from './database-table/database-table.componen
 import { CardListComponent } from './card-list/card-list.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HelpPageComponent } from './help-page/help-page.component';
+import { TermsComponent } from './terms/terms.component';
+import { PolicyComponent } from './policy/policy.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -25,6 +27,14 @@ const appRoutes: Routes = [
     path: 'help',
     component: HelpPageComponent,
     data: { returnUrl: '/' },
+  },
+  {
+    path: 'terms',
+    component: TermsComponent,
+  },
+  {
+    path: 'policy',
+    component: PolicyComponent,
   },
 ];
 @NgModule({
