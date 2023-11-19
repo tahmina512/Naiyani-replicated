@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-policy',
   templateUrl: './policy.component.html',
-  styleUrls: ['./policy.component.scss']
+  styleUrls: ['./policy.component.scss'],
 })
 export class PolicyComponent {
-
+  constructor(private router:Router){}
+  onPreviousPage() {
+    this.router.navigate(['']);
+  }
+  helpPage() {
+    this.router.navigate(['/help']);
+  }
 }
