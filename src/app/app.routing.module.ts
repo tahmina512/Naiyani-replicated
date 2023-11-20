@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'database-list', component: DatabaseListComponent },
   { path: 'database-table', component: DatabaseTableComponent },
   {
-    path: 'card',
+    path: 'product-list',
     component: CardListComponent,
   },
   {

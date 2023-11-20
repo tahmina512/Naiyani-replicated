@@ -17,7 +17,7 @@ export class DatabaseListComponent implements OnInit {
     this.router.navigate(['/database-btn']);
   }
   bookSection() {
-    this.router.navigate(['/card']);
+    this.router.navigate(['/product-list']);
   }
   helpPage() {
     this.router.navigate(['/help']);
