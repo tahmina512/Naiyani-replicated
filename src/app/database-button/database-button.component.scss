@@ -20,7 +20,7 @@
   height: 47px;
   background-color: white;
   border: solid 2px black;
-  animation: appearButtons 3s ease forwards;
+  // animation: appearButtons 3s ease forwards;
   box-shadow: none;
 }
 
@@ -76,7 +76,7 @@
   // font-size: 26px;
   font-size: clamp(2.8rem, 3.5vw, 3rem);
   letter-spacing: 1px;
-  animation: appearButtons 3s ease forwards;
+  // animation: appearButtons 3s ease forwards;
 }
 @keyframes appearButtons {
   0% {

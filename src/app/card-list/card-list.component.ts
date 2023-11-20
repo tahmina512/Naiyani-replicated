@@ -19,12 +19,7 @@ export class CardListComponent implements OnInit {
     this.cardListService.getData().subscribe(
       (result: any[]) => {
         console.log('Data from the backend:', result);
-        // this.product = result;
-        // if (typeof result === 'string') {
-        //   this.product = JSON.parse(result);
-        // } else {
-        //   this.product = result; // Assuming result is already an object
-        // }
+
         this.product = result.map(
           (item) =>
             new Leads(

@@ -233,10 +233,10 @@ tbody tr td:nth-child(5) + td {
   }
 
   .circle {
-    margin-right: 5px;
+    margin-right: 10px;
     min-height: 100px;
     max-width: 100px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .card-content {
     width: 105rem;
@@ -256,8 +256,6 @@ tbody tr td:nth-child(5) + td {
     // background-color: orange;
     margin-right: 1rem;
   }
-}
-@media screen and (max-width: 1105px) {
 }
 @media screen and (min-width: 1188px) {
   .table-container {
