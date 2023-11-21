@@ -164,7 +164,8 @@ tbody tr td:nth-child(5) {
 tbody tr td:nth-child(5),
 tbody tr td:nth-child(5) + td {
   position: relative;
-  top: -3px;
+  // background-color: orange;
+  top: -10px;
 
   // background-color: yellow;
 }
