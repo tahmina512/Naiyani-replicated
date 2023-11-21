@@ -23,12 +23,16 @@ export class HelpPageComponent {
   //   }
   // }
 
-onAccordionHover(accordionPanel: MatExpansionPanel, isHovered: boolean) {
-  if (isHovered) {
-    accordionPanel.open();  // Open the panel on hover
-  } 
-}
+  onAccordionHover(accordionPanel: MatExpansionPanel, isHovered: boolean) {
+    if (isHovered) {
+      accordionPanel.open(); // Open the panel on hover
+    }
+  }
   onPreviousPage() {
     this.location.back();
+  }
+  navigateToHome()
+  {
+    this.router.navigate(['/database-btn']);
   }
 }

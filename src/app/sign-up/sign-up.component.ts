@@ -14,4 +14,10 @@ export class SignUpComponent {
   helpPage() {
     this.router.navigate(['/help']);
   }
+  goToTerms() {
+    this.router.navigate(['/terms']);
+  }
+  gotToPolicy() {
+    this.router.navigate(['/policy']);
+  }
 }
