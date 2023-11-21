@@ -8,7 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 const MaterialComponents = [
   MatSlideToggleModule,
   MatButtonModule,
@@ -19,6 +19,7 @@ const MaterialComponents = [
   MatInputModule,
   MatCardModule,
   MatExpansionModule,
+  MatTooltipModule,
 ];
 
 @NgModule({

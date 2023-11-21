@@ -4,6 +4,7 @@
   flex-direction: column;
   animation: appearButtons 3s ease forwards;
   // background-color: blue;
+  animation: appearButtons 3s ease forwards;
 }
 
 .arrow-position {
@@ -19,7 +20,7 @@
   height: 47px;
   background-color: white;
   border: solid 2px black;
-  animation: appearButtons 3s ease forwards;
+
   box-shadow: none;
 }
 
@@ -98,7 +99,7 @@
   white-space: normal; /* Allow text to wrap */
   overflow: hidden;
   pointer-events: none;
-  animation: appearButtons 3s ease forwards;
+  // animation: appearButtons 3s ease forwards;
 }
 .content-container {
   // background-color: yellow;
@@ -107,6 +108,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 28rem;
+  animation: appearButtons 3s ease forwards;
 }
 .content-text {
   font-family: "Calibri-Regular", sans-serif;

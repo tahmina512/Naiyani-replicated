@@ -85,140 +85,161 @@
   </div>
   <div class="text-position"><span>Hello, Username</span></div>
 </div>
-
-<div *ngIf="product.length > 0" class="container">
-  <!-- <mat-card *ngIf="product && product.length > 0" class="grid"> -->
-  <mat-card *ngFor="let product of product" class="grid">
-    <mat-card-content class="card-content">
-      <div class="circle">
-        <img [src]="product.Image_Link" alt="" class="show-image" />
-      </div>
-      <div class="info">
-        <div class="info-label">
-          {{ product.Product_Name }}
+<div class="container">
+  <div *ngIf="product.length > 0">
+    <!-- <mat-card *ngIf="product && product.length > 0" class="grid"> -->
+    <mat-card *ngFor="let product of product" class="grid">
+      <mat-card-content class="card-content">
+        <div class="circle">
+          <img [src]="product.Image_Link" alt="" class="show-image" />
         </div>
-        <div class="info-value">{{ product.ASIN }}</div>
-      </div>
-      <div class="table-container">
-        <table>
-          <tbody>
-            <tr>
-              <td>Amazon FBA est. fees:</td>
-              <td style="color: red">
-                {{ product.Amazon_FBA_estimated_fees }}
-              </td>
-              <!-- <td></td>
+        <div class="info">
+          <div class="info-label">
+            {{ product.Product_Name }}
+          </div>
+          <div class="info-value">{{ product.ASIN }}</div>
+        </div>
+        <div class="table-container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Amazon FBA est. fees:</td>
+                <td style="color: red">
+                  {{ product.Amazon_FBA_estimated_fees }}
+                </td>
+                <!-- <td></td>
               <td></td>
               <td></td>
               <td></td>
               <td>Amazon Price:</td>
               <td>{{ product.Amazon_Price }}</td> -->
-            </tr>
-            <tr>
-              <td>Estimated Monthly Sales:</td>
-              <td>{{ product.Estimated_Monthly_Sales }}</td>
-              <td>Est. Gross Profit:</td>
-              <td>{{ product.Estimated_Gross_Profit }}</td>
-            </tr>
-            <tr>
-              <td>Est. Sales Rank:</td>
-              <td>{{ product.Est_Sales_Rank }}</td>
-              <td>Est. Gross Profit Margin:</td>
-              <td>{{ product.Estimated_Gross_Profit_Margin }}</td>
-              <td>Amazon on Listing:</td>
-              <td>{{ product.Amazon_on_Listing }}</td>
-            </tr>
-            <tr>
-              <td>Sales Rank (30 days):</td>
-              <td>{{ product.Sales_Rank_30_days }}</td>
-              <td>Est. Net Profit:</td>
-              <td>{{ product.Estimated_Net_Profit }}</td>
-              <td>No. of Sellers:</td>
-              <td>{{ product.Number_of_sellers_on_the_listing }}</td>
-            </tr>
-            <tr>
-              <td>Sales Rank (90 days):</td>
-              <td>{{ product.Sales_Rank_90_days }}</td>
-              <td>Est. Net Profit Margin:</td>
-              <td>{{ product.Estimated_Net_Profit_Margin }}</td>
-              <td>No. of Reviews:</td>
-              <td>{{ product.Number_of_Reviews }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="link-section">
-        <table>
-          <tbody>
-            <tr>
-              <td>Amazon Price:</td>
-              <td>
-                {{ product.Amazon_Price }}
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <a [href]="product.Amazon_URL" target="_blank">
-                  <svg
-                    class="svg-holder"
-                    width="110"
-                    height="28"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xml:space="preserve"
-                    overflow="hidden"
-                  >
-                    <text x="0" y="50%" dy=".3em" fill="#4472C4">Amazon</text>
-                    <g transform="translate(-760 -66)">
-                      <path
-                        d="M15 3.75C21.2132 3.75 26.25 8.78678 26.25 15 26.25 21.2132 21.2132 26.25 15 26.25 8.78678 26.25 3.75 21.2132 3.75 15 3.75653 8.7895 8.7895 3.75653 15 3.75M15 3.125C8.44163 3.125 3.125 8.44163 3.125 15 3.125 21.5584 8.44163 26.875 15 26.875 21.5584 26.875 26.875 21.5584 26.875 15 26.875 8.44163 21.5584 3.125 15 3.125Z"
-                        transform="matrix(1.03333 0 0 1 837 66)"
-                      ></path>
-                      <path
-                        d="M22.7213 14.7791 18.0338 10.0916C17.9096 9.97166 17.7118 9.97509 17.5919 10.0992 17.4749 10.2203 17.4749 10.4123 17.5919 10.5334L21.7406 14.6822C21.7434 14.685 21.7425 14.6875 21.7384 14.6875L7.29187 14.6875C7.11928 14.6875 6.97937 14.8274 6.97937 15 6.97937 15.1726 7.11928 15.3125 7.29187 15.3125L21.7384 15.3125C21.7402 15.3125 21.7415 15.3139 21.7415 15.3157 21.7415 15.3165 21.7412 15.3173 21.7406 15.3178L17.5919 19.4666C17.4677 19.5865 17.4643 19.7843 17.5842 19.9084 17.7041 20.0326 17.9019 20.036 18.0261 19.9161 18.0287 19.9136 18.0312 19.911 18.0338 19.9084L22.7213 15.2209C22.8432 15.0989 22.8432 14.9011 22.7213 14.7791Z"
-                        transform="matrix(1.03333 0 0 1 837 66)"
-                      ></path>
-                    </g>
-                  </svg>
-                </a>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Sourcing Price:</td>
-              <td>{{ product.Sourcing_Price }}</td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <a [href]="product.Sourcing_URL" target="_blank">
-                  <svg
-                    class="svg-holder"
-                    width="110"
-                    height="28"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xml:space="preserve"
-                    overflow="hidden"
-                  >
-                    <text x="0" y="50%" dy=".3em" fill="#4472C4">Source</text>
-                    <g transform="translate(-760 -66)">
-                      <path
-                        d="M15 3.75C21.2132 3.75 26.25 8.78678 26.25 15 26.25 21.2132 21.2132 26.25 15 26.25 8.78678 26.25 3.75 21.2132 3.75 15 3.75653 8.7895 8.7895 3.75653 15 3.75M15 3.125C8.44163 3.125 3.125 8.44163 3.125 15 3.125 21.5584 8.44163 26.875 15 26.875 21.5584 26.875 26.875 21.5584 26.875 15 26.875 8.44163 21.5584 3.125 15 3.125Z"
-                        transform="matrix(1.03333 0 0 1 837 66)"
-                      ></path>
-                      <path
-                        d="M22.7213 14.7791 18.0338 10.0916C17.9096 9.97166 17.7118 9.97509 17.5919 10.0992 17.4749 10.2203 17.4749 10.4123 17.5919 10.5334L21.7406 14.6822C21.7434 14.685 21.7425 14.6875 21.7384 14.6875L7.29187 14.6875C7.11928 14.6875 6.97937 14.8274 6.97937 15 6.97937 15.1726 7.11928 15.3125 7.29187 15.3125L21.7384 15.3125C21.7402 15.3125 21.7415 15.3139 21.7415 15.3157 21.7415 15.3165 21.7412 15.3173 21.7406 15.3178L17.5919 19.4666C17.4677 19.5865 17.4643 19.7843 17.5842 19.9084 17.7041 20.0326 17.9019 20.036 18.0261 19.9161 18.0287 19.9136 18.0312 19.911 18.0338 19.9084L22.7213 15.2209C22.8432 15.0989 22.8432 14.9011 22.7213 14.7791Z"
-                        transform="matrix(1.03333 0 0 1 837 66)"
-                      ></path>
-                    </g>
-                  </svg>
-                </a>
-              </td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </mat-card-content>
-  </mat-card>
+              </tr>
+              <tr>
+                <td>Estimated Monthly Sales:</td>
+                <td>{{ product.Estimated_Monthly_Sales }}</td>
+                <td>Est. Gross Profit:</td>
+                <td>{{ product.Estimated_Gross_Profit }}</td>
+              </tr>
+              <tr>
+                <td>Est. Sales Rank:</td>
+                <td>{{ product.Est_Sales_Rank }}</td>
+                <td>Est. Gross Profit Margin:</td>
+                <td>{{ product.Estimated_Gross_Profit_Margin }}</td>
+                <td>Amazon on Listing:</td>
+                <td>{{ product.Amazon_on_Listing }}</td>
+              </tr>
+              <tr>
+                <td>Sales Rank (30 days):</td>
+                <td>{{ product.Sales_Rank_30_days }}</td>
+                <td>Est. Net Profit:</td>
+                <td>{{ product.Estimated_Net_Profit }}</td>
+                <td>No. of Sellers:</td>
+                <td>{{ product.Number_of_sellers_on_the_listing }}</td>
+              </tr>
+              <tr>
+                <td>Sales Rank (90 days):</td>
+                <td>{{ product.Sales_Rank_90_days }}</td>
+                <td>Est. Net Profit Margin:</td>
+                <td>{{ product.Estimated_Net_Profit_Margin }}</td>
+                <td>No. of Reviews:</td>
+                <td>{{ product.Number_of_Reviews }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="link-section">
+          <table>
+            <tbody>
+              <tr>
+                <td>Amazon Price: {{ product.Amazon_Price }}</td>
+                <td>
+                  <a [href]="product.Amazon_URL" target="_blank"
+                    ><i
+                      class="fa fa-eye"
+                      aria-hidden="true"
+                      matTooltip="Visit Amazon"
+                      matTooltipPosition="below"
+                      aria-label="displays a tooltip when hovered "
+                    ></i
+                  ></a>
+                </td>
+                <!-- <td>
+                  <a [href]="product.Amazon_URL" target="_blank">
+                    <svg
+                      class="svg-holder"
+                      width="30"
+                      height="25"
+                      viewBox="0 0 698 698"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xml:space="preserve"
+                      overflow="hidden"
+                      matTooltip="Visit Amazon"
+                      matTooltipPosition="below"
+                    >
+                      <g>
+                        <path
+                          d="M688 349C688 536.225 536.225 688 349 688C161.775 688 10 536.225 10 349C10 161.775 161.775 10 349 10C536.225 10 688 161.775 688 349Z"
+                          fill="white"
+                          stroke="black"
+                          stroke-width="20"
+                        />
+                        <path
+                          d="M348.499 178C281.301 178 227.492 206.031 188.32 239.395C149.398 272.453 123.367 312.062 111.058 339.256C108.314 345.273 108.314 351.977 111.058 357.994C123.367 385.187 149.398 424.797 188.32 457.855C227.492 491.219 281.301 519.25 348.499 519.25C415.698 519.25 469.507 491.219 508.678 457.855C547.6 424.721 573.631 385.187 586.023 357.994C588.768 351.977 588.768 345.273 586.023 339.256C573.631 312.062 547.6 272.453 508.678 239.395C469.507 206.031 415.698 178 348.499 178ZM228.739 348.625C228.739 319.534 241.357 291.635 263.816 271.064C286.275 250.494 316.737 238.938 348.499 238.938C380.262 238.938 410.723 250.494 433.182 271.064C455.642 291.635 468.259 319.534 468.259 348.625C468.259 377.716 455.642 405.615 433.182 426.186C410.723 446.756 380.262 458.312 348.499 458.312C316.737 458.312 286.275 446.756 263.816 426.186C241.357 405.615 228.739 377.716 228.739 348.625ZM348.499 299.875C348.499 326.764 324.63 348.625 295.273 348.625C289.368 348.625 283.712 347.711 278.39 346.111C273.816 344.74 268.493 347.33 268.659 351.748C268.909 357.004 269.74 362.26 271.321 367.516C282.714 406.516 326.543 429.672 369.125 419.236C411.706 408.801 436.989 368.658 425.595 329.658C416.363 298.047 385.841 276.795 351.909 275.5C347.085 275.348 344.258 280.146 345.755 284.412C347.501 289.287 348.499 294.467 348.499 299.875Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </td> -->
+              </tr>
+              <tr>
+                <td>Sourcing Price: {{ product.Sourcing_Price }}</td>
+                <td>
+                    <a [href]="product.Sourcing_URL" target="_blank"
+                    ><i
+                      class="fa fa-eye"
+                      aria-hidden="true"
+                      matTooltip="Visit Source"
+                      matTooltipPosition="below"
+                      aria-label="displays a tooltip when hovered "
+                    ></i
+                  ></a>
+                </td>
+                <!-- <td>
+                  <a [href]="product.Sourcing_URL" target="_blank">
+                    <svg
+                      class="svg-holder"
+                      width="30"
+                      height="25"
+                      viewBox="0 0 698 698"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xml:space="preserve"
+                      overflow="hidden"
+                      matTooltip="Visit Source"
+                      matTooltipPosition="below"
+                    >
+                      <g>
+                        <path
+                          d="M688 349C688 536.225 536.225 688 349 688C161.775 688 10 536.225 10 349C10 161.775 161.775 10 349 10C536.225 10 688 161.775 688 349Z"
+                          fill="white"
+                          stroke="black"
+                          stroke-width="20"
+                        />
+                        <path
+                          d="M348.499 178C281.301 178 227.492 206.031 188.32 239.395C149.398 272.453 123.367 312.062 111.058 339.256C108.314 345.273 108.314 351.977 111.058 357.994C123.367 385.187 149.398 424.797 188.32 457.855C227.492 491.219 281.301 519.25 348.499 519.25C415.698 519.25 469.507 491.219 508.678 457.855C547.6 424.721 573.631 385.187 586.023 357.994C588.768 351.977 588.768 345.273 586.023 339.256C573.631 312.062 547.6 272.453 508.678 239.395C469.507 206.031 415.698 178 348.499 178ZM228.739 348.625C228.739 319.534 241.357 291.635 263.816 271.064C286.275 250.494 316.737 238.938 348.499 238.938C380.262 238.938 410.723 250.494 433.182 271.064C455.642 291.635 468.259 319.534 468.259 348.625C468.259 377.716 455.642 405.615 433.182 426.186C410.723 446.756 380.262 458.312 348.499 458.312C316.737 458.312 286.275 446.756 263.816 426.186C241.357 405.615 228.739 377.716 228.739 348.625ZM348.499 299.875C348.499 326.764 324.63 348.625 295.273 348.625C289.368 348.625 283.712 347.711 278.39 346.111C273.816 344.74 268.493 347.33 268.659 351.748C268.909 357.004 269.74 362.26 271.321 367.516C282.714 406.516 326.543 429.672 369.125 419.236C411.706 408.801 436.989 368.658 425.595 329.658C416.363 298.047 385.841 276.795 351.909 275.5C347.085 275.348 344.258 280.146 345.755 284.412C347.501 289.287 348.499 294.467 348.499 299.875Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>
