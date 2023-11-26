@@ -1,0 +1,38 @@
+<!-- 
+<div
+  class="image-container"
+  (mouseover)="setHover(true)"
+  (mouseout)="setHover(false)"
+>
+  <img
+    src="https://media.istockphoto.com/id/1466748418/photo/milk-splashes-isolated-with-clipping-path-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=1VYB3ivwzEPztBf_1sEmtBsqljd8d2ZlWhlbPNeN8XQ="
+    alt="Small Image"
+    class="small-image"
+  />
+  <div [ngClass]="{ popup: isHovered }" class="popup-content">
+    <img
+      src="https://media.istockphoto.com/id/1466748418/photo/milk-splashes-isolated-with-clipping-path-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=1VYB3ivwzEPztBf_1sEmtBsqljd8d2ZlWhlbPNeN8XQ="
+      alt="Large Image"
+      class="large-image"
+    />
+  </div>
+</div> -->
+<div
+  class="image-container"
+  (mouseover)="setHover(true)"
+  (mouseout)="setHover(false)"
+>
+  <img
+    src="https://media.istockphoto.com/id/1466748418/photo/milk-splashes-isolated-with-clipping-path-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=1VYB3ivwzEPztBf_1sEmtBsqljd8d2ZlWhlbPNeN8XQ="
+    alt="Small Image"
+    class="small-image"
+  />
+  <div [ngClass]="{ popup: isHovered }" class="popup-content">
+    <span class="close-btn" (click)="hideImage()">&times;</span>
+    <img
+      src="https://media.istockphoto.com/id/1466748418/photo/milk-splashes-isolated-with-clipping-path-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=1VYB3ivwzEPztBf_1sEmtBsqljd8d2ZlWhlbPNeN8XQ="
+      alt="Large Image"
+      class="large-image"
+    />
+  </div>
+</div>
