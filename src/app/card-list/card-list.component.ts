@@ -20,6 +20,11 @@ export class CardListComponent implements OnInit {
   product: Leads[] = [];
   isHovered = false;
   hoveredProductIndex: number | null = null;
+  // secondDivPosition: string = 'relative';
+
+  // hasScrolledX: boolean = false;
+  // secondDivPosition: string = 'absolute';
+
   constructor(
     private cardListService: CardListService,
     private router: Router,
@@ -31,14 +36,39 @@ export class CardListComponent implements OnInit {
     const windowHeight = window.innerHeight;
     return `${windowHeight - 5}px`; // Adjust the value as needed
   }
+// calculateRightPosition(): string {
+//     // Demo value: You can replace this with your dynamic calculation
+//     const demoMargin = 800;
+//     const windowWidth = window.innerWidth;
+    
+//     // Calculate the position as a percentage of the window width
+//     const positionPercentage = 100;
+    
+//     // Subtract the demo margin
+//     const rightPosition = `calc(${positionPercentage}% - ${demoMargin}px)`;
 
+//     return rightPosition;
+// }
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     this.updateHorizontalScrollerHeight();
   }
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event: Event): void {
+  //   this.adjustSecondDivPosition();
+  //   this.cdr.detectChanges();
+  // }
 
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event: Event): void {
+  //   console.log('Scroll event detected!');
+  //   this.hasScrolledX = true; // Set the flag when scrolling occurs
+  //   this.adjustSecondDivPosition();
+  // }
   ngAfterViewInit(): void {
     this.updateHorizontalScrollerHeight();
+    // this.adjustSecondDivPosition();
+    // this.cdr.detectChanges();
   }
 
   private updateHorizontalScrollerHeight(): void {
@@ -86,28 +116,23 @@ export class CardListComponent implements OnInit {
       }
     );
   }
-  // calculateVisibleHeight(): string {
-  //   const windowHeight = window.innerHeight;
-  //   return `${windowHeight - 20}px`; // Adjust the value as needed
-  // }
+  // private adjustSecondDivPosition(): void {
+  //   const scrollmenu = this.elementRef.nativeElement.querySelector(
+  //     '.scrollmenu'
+  //   ) as HTMLElement;
 
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: Event): void {
-  //   this.updateHorizontalScrollerHeight();
-  // }
+  //   if (!scrollmenu) {
+  //     console.error('Scrollmenu not found!');
+  //     return;
+  //   }
 
-  // ngAfterViewInit(): void {
-  //   this.updateHorizontalScrollerHeight();
+  //   const hasOverflowX = scrollmenu.scrollWidth > scrollmenu.clientWidth;
+  //   console.log(hasOverflowX);
+  //   this.secondDivPosition = hasOverflowX ? 'relative' : 'absolute';
+  //   console.log('object', this.secondDivPosition);
   // }
+ 
 
-  // private updateHorizontalScrollerHeight(): void {
-  //   const calculatedHeight = this.calculateVisibleHeight();
-  //   this.renderer.setStyle(
-  //     this.elementRef.nativeElement,
-  //     'height',
-  //     calculatedHeight
-  //   );
-  // }
   onPreviousPage() {
     this.router.navigate(['/database-list']);
   }
