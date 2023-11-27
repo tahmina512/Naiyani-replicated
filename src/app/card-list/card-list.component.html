@@ -2,11 +2,13 @@
   <div
     class="scrollmenu"
     [style.height]="calculateVisibleHeight()"
+    (scroll)="onScroll($event)"
   >
     <button
       mat-fab
       class="arrow-position hover-effect"
       (click)="onPreviousPage()"
+      [class.invisible]="isScrolledDown"
     >
       <!-- <mat-icon  class="large-icon">arrow_back</mat-icon> -->
       <svg
@@ -34,6 +36,7 @@
       xPosition="before"
       yPosition="below"
       class="filter-icon-container hover-effect"
+      [class.invisible]="isScrolledDown"
     >
       <!-- <i class="fa fa-sliders fa-flip-both fa-2xl" style="color: white"></i> -->
       <svg
@@ -85,7 +88,9 @@
         <a><span>Help</span> </a>
       </button>
     </mat-menu>
-    <div class="text-position"><span>Hello, Username</span></div>
+    <div class="text-position" [class.invisible]="isScrolledDown">
+      <span>Hello, Username</span>
+    </div>
 
     <div class="container">
       <div *ngIf="product.length > 0">

@@ -20,6 +20,8 @@ export class CardListComponent implements OnInit {
   product: Leads[] = [];
   isHovered = false;
   hoveredProductIndex: number | null = null;
+  // isScrolledDown: boolean = false;
+  // lastScrollPosition: number = 0;
   // secondDivPosition: string = 'relative';
 
   // hasScrolledX: boolean = false;
@@ -32,23 +34,33 @@ export class CardListComponent implements OnInit {
     private renderer: Renderer2,
     private cdr: ChangeDetectorRef
   ) {}
+
+  isScrolledDown: boolean = false;
+  lastScrollPosition: number = 0;
+
+  @HostListener('scroll', ['$event'])
+  onScroll(event: Event): void {
+    const scrollY = (event.target as HTMLElement).scrollTop;
+    this.isScrolledDown = scrollY > this.lastScrollPosition;
+    this.lastScrollPosition = scrollY;
+  }
   calculateVisibleHeight(): string {
     const windowHeight = window.innerHeight;
     return `${windowHeight - 5}px`; // Adjust the value as needed
   }
-// calculateRightPosition(): string {
-//     // Demo value: You can replace this with your dynamic calculation
-//     const demoMargin = 800;
-//     const windowWidth = window.innerWidth;
-    
-//     // Calculate the position as a percentage of the window width
-//     const positionPercentage = 100;
-    
-//     // Subtract the demo margin
-//     const rightPosition = `calc(${positionPercentage}% - ${demoMargin}px)`;
+  // calculateRightPosition(): string {
+  //     // Demo value: You can replace this with your dynamic calculation
+  //     const demoMargin = 800;
+  //     const windowWidth = window.innerWidth;
 
-//     return rightPosition;
-// }
+  //     // Calculate the position as a percentage of the window width
+  //     const positionPercentage = 100;
+
+  //     // Subtract the demo margin
+  //     const rightPosition = `calc(${positionPercentage}% - ${demoMargin}px)`;
+
+  //     return rightPosition;
+  // }
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     this.updateHorizontalScrollerHeight();
@@ -131,7 +143,6 @@ export class CardListComponent implements OnInit {
   //   this.secondDivPosition = hasOverflowX ? 'relative' : 'absolute';
   //   console.log('object', this.secondDivPosition);
   // }
- 
 
   onPreviousPage() {
     this.router.navigate(['/database-list']);
