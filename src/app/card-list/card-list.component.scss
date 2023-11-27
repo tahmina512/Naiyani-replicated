@@ -21,7 +21,8 @@
   cursor: pointer;
   background-color: #595959;
   box-shadow: none !important;
-  z-index: 2;
+  // z-index: 2;
+  opacity: 1;
 }
 .arrow-position {
   position: absolute;
@@ -38,15 +39,10 @@
   border: solid 2px black;
   animation: appearButtons 3s ease forwards;
   box-shadow: none;
+  opacity: 1;
   //  z-index: 2;
-
-  transition: opacity 0.3s ease-in-out;
 }
 
-.invisible {
-  opacity: 0 !important;
-  pointer-events: none !important; /* Disable pointer events when invisible */
-}
 .text-position {
   position: absolute;
   top: 70px;
@@ -55,26 +51,10 @@
   font-size: clamp(2.5rem, 3.5vw, 2.8rem);
   letter-spacing: 1px;
   // z-index: 2;
-
+  opacity: 1;
   animation: appearButtons 3s ease forwards;
 }
-// .filter-icon-container {
-//   position: absolute;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
 
-//   top: 20px;
-//   right: 15px;
-//   height: 52px;
-//   width: 52px;
-//   border-radius: 50%;
-//   border: none;
-//   // padding: 7px 5px;
-//   cursor: pointer;
-//   background-color: #595959;
-//   box-shadow: none !important;
-// }
 .hover-effect:hover {
   // box-shadow: none;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
@@ -133,7 +113,7 @@
 .card-content {
   display: flex;
   flex-direction: row;
-  // flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+
   justify-content: flex-start;
   align-items: center;
   position: relative;
@@ -268,13 +248,13 @@ tbody tr td:nth-child(5) + td {
   right: 15px;
   font-size: 35px;
   cursor: pointer;
-  color: white; /* Set the color to make it visible on the light background */
+  color: white; 
 }
 
 .link-section {
   min-width: 150px;
 
-  width: 100%; /* Take up the available space */
+  width: 100%; 
   // background-color: pink;
   margin-left: 10px;
   margin-right: 5px;
@@ -304,6 +284,19 @@ tbody tr td:nth-child(5) + td {
     white-space: nowrap;
     // position: absolute;
   }
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .invisible {
+    opacity: 0 !important;
+    pointer-events: none !important; /* Disable pointer events when invisible */
+  }
 }
 @media screen and (min-width: 495px) and (max-width: 1177px) {
   .grid {
@@ -311,24 +304,24 @@ tbody tr td:nth-child(5) + td {
     // background-color: yellow;
     padding-right: 300px;
     margin-left: 30px;
-  //    .invisible {
-  //   opacity: 0;
-  //   pointer-events: none; /* Disable pointer events when invisible */
-  // }
-    // overflow-x: auto;
   }
-
-  // .container {
-  //   background-color: orange;
-  // }
   div.scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
     // position: absolute;
   }
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
   .invisible {
-    opacity: 0;
-    pointer-events: none; /* Disable pointer events when invisible */
+    opacity: 0 !important;
+    pointer-events: none !important; /* Disable pointer events when invisible */
   }
 
   .card-content {
@@ -348,9 +341,20 @@ tbody tr td:nth-child(5) + td {
     white-space: nowrap;
     // position: absolute;
   }
-  // .invisible {
-  //   opacity: 0;
-  //   pointer-events: none; /* Disable pointer events when invisible */
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .invisible {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+ 
   // }
   .grid {
     width: calc(100% + 200px);

@@ -1,14 +1,15 @@
-<div class="banner-container">
+<div class="banner-container"   >
   <div
     class="scrollmenu"
     [style.height]="calculateVisibleHeight()"
     (scroll)="onScroll($event)"
+    
   >
     <button
       mat-fab
       class="arrow-position hover-effect"
       (click)="onPreviousPage()"
-      [class.invisible]="isScrolledDown"
+      [class.invisible]="!isScrolledAtTop"
     >
       <!-- <mat-icon  class="large-icon">arrow_back</mat-icon> -->
       <svg
@@ -36,7 +37,7 @@
       xPosition="before"
       yPosition="below"
       class="filter-icon-container hover-effect"
-      [class.invisible]="isScrolledDown"
+     [class.invisible]="!isScrolledAtTop"
     >
       <!-- <i class="fa fa-sliders fa-flip-both fa-2xl" style="color: white"></i> -->
       <svg
@@ -88,7 +89,7 @@
         <a><span>Help</span> </a>
       </button>
     </mat-menu>
-    <div class="text-position" [class.invisible]="isScrolledDown">
+    <div class="text-position" [class.invisible]="!isScrolledAtTop">
       <span>Hello, Username</span>
     </div>
 
