@@ -294,8 +294,8 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 !important;
-    pointer-events: none !important; /* Disable pointer events when invisible */
+    opacity: 0 ;
+    pointer-events: none ; /* Disable pointer events when invisible */
   }
 }
 @media screen and (min-width: 495px) and (max-width: 1177px) {
@@ -320,8 +320,8 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 !important;
-    pointer-events: none !important; /* Disable pointer events when invisible */
+    opacity: 0 ;
+    pointer-events: none ; /* Disable pointer events when invisible */
   }
 
   .card-content {
@@ -351,8 +351,8 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 !important;
-    pointer-events: none !important;
+    opacity: 0 ;
+    pointer-events: none ;
   }
  
   // }

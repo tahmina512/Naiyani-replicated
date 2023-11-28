@@ -33,7 +33,7 @@ export class CardListComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
-    const isScrollMenu = (event.target as HTMLElement).classList.contains(
+    const isScrollMenu = (event.target as HTMLElement).classList?.contains(
       'scrollmenu'
     );
 
