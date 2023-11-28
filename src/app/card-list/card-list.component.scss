@@ -248,13 +248,13 @@ tbody tr td:nth-child(5) + td {
   right: 15px;
   font-size: 35px;
   cursor: pointer;
-  color: white; 
+  color: white;
 }
 
 .link-section {
   min-width: 150px;
 
-  width: 100%; 
+  width: 100%;
   // background-color: pink;
   margin-left: 10px;
   margin-right: 5px;
@@ -268,7 +268,7 @@ tbody tr td:nth-child(5) + td {
   // background-color: yellow;
 }
 
-@media screen and (min-width: 220px) and (max-width: 494px) {
+@media screen and (min-width: 220px) and (max-width: 692px) {
   .grid {
     width: calc(100% + 800px);
     // background-color: red;
@@ -294,13 +294,49 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 ;
-    pointer-events: none ; /* Disable pointer events when invisible */
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events when invisible */
   }
 }
-@media screen and (min-width: 495px) and (max-width: 1177px) {
+@media screen and (min-width: 693px) and (max-width: 943px) {
   .grid {
-    width: calc(100% + 800px);
+    width: calc(100% + 600px);
+    // background-color: red;
+    padding-right: 300px;
+    margin-left: 30px;
+  }
+  div.scrollmenu {
+    overflow-x: auto;
+    white-space: nowrap;
+    // position: absolute;
+  }
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .invisible {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events when invisible */
+  }
+
+  .card-content {
+    width: calc(100% + 250px);
+    // background-color: yellow;
+    // margin-left: 30px;
+  }
+  .info {
+    min-width: 40ch;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 944px) and (max-width: 1177px) {
+  .grid {
+    width: calc(100% + 350px);
     // background-color: yellow;
     padding-right: 300px;
     margin-left: 30px;
@@ -320,13 +356,13 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 ;
-    pointer-events: none ; /* Disable pointer events when invisible */
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events when invisible */
   }
 
   .card-content {
     width: calc(100% + 250px);
-    // background-color: yellow;
+    // background-color: red;
     // margin-left: 30px;
   }
   .info {
@@ -351,10 +387,10 @@ tbody tr td:nth-child(5) + td {
     transition: opacity 0.3s ease-in-out;
   }
   .invisible {
-    opacity: 0 ;
-    pointer-events: none ;
+    opacity: 0;
+    pointer-events: none;
   }
- 
+
   // }
   .grid {
     width: calc(100% + 200px);
