@@ -23,6 +23,7 @@
   box-shadow: none !important;
   // z-index: 2;
   opacity: 1;
+  // animation: appearButtons 3s ease forwards;
 }
 .arrow-position {
   position: absolute;
@@ -37,7 +38,7 @@
   height: 47px;
   background-color: white;
   border: solid 2px black;
-  animation: appearButtons 3s ease forwards;
+  // animation: appearButtons 3s ease forwards;
   box-shadow: none;
   opacity: 1;
   //  z-index: 2;
@@ -52,9 +53,16 @@
   letter-spacing: 1px;
   // z-index: 2;
   opacity: 1;
-  animation: appearButtons 3s ease forwards;
+  // animation: appearButtons 3s ease forwards;
 }
-
+// @keyframes appearButtons {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 .hover-effect:hover {
   // box-shadow: none;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
@@ -91,6 +99,7 @@
   // background-color: #548235;
   width: auto;
   // overflow-x: auto;
+
 }
 
 .grid {
@@ -107,6 +116,8 @@
   border-radius: none;
   // background-color: aqua;
   margin-left: 0;
+  // animation: appearButtons 3s ease forwards;
+  // animation-delay: 3s;
   // z-index: 999;
 }
 

@@ -47,7 +47,7 @@ export class CardListComponent implements OnInit {
   }
   calculateVisibleHeight(): string {
     const windowHeight = window.innerHeight;
-    return `${windowHeight - 5}px`; 
+    return `${windowHeight}px`;
   }
 
   @HostListener('window:resize', ['$event'])
