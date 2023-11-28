@@ -42,7 +42,7 @@ export class CardListComponent implements OnInit {
 
       this.isScrolledAtTop = scrollY === 0;
 
-      this.cdr.detectChanges();
+      // this.cdr.detectChanges();
     }
   }
   calculateVisibleHeight(): string {
