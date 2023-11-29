@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // background-color: pink;
   height: auto;
 }
 .filter-icon-container {
@@ -21,8 +20,7 @@
   cursor: pointer;
   background-color: #595959;
   box-shadow: none !important;
-  // z-index: 2;
-  opacity: 1;
+
   // animation: appearButtons 3s ease forwards;
 }
 .arrow-position {
@@ -40,8 +38,6 @@
   border: solid 2px black;
   // animation: appearButtons 3s ease forwards;
   box-shadow: none;
-  opacity: 1;
-  //  z-index: 2;
 }
 .text-position {
   position: absolute;
@@ -50,8 +46,6 @@
   font-family: "Calibri-Bold", sans-serif;
   font-size: clamp(2.5rem, 3.5vw, 2.8rem);
   letter-spacing: 1px;
-  // z-index: 2;
-  opacity: 1;
   // animation: appearButtons 3s ease forwards;
 }
 // @keyframes appearButtons {
@@ -279,14 +273,11 @@ tbody tr td:nth-child(5) + td {
 
 @media screen and (min-width: 220px) and (max-width: 692px) {
   .grid {
-    width: calc(100% + 800px);
-    // background-color: red;
-
+    width: calc(100% + 700px);
     padding-left: 25px;
   }
   .card-content {
     width: calc(100% + 2px);
-    // background-color: orange;
   }
   .scrollmenu {
     overflow-x: auto;
@@ -310,81 +301,12 @@ tbody tr td:nth-child(5) + td {
 @media screen and (min-width: 693px) and (max-width: 943px) {
   .grid {
     width: calc(100% + 600px);
-    // background-color: red;
     padding-right: 300px;
     margin-left: 30px;
   }
   .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
-    // position: absolute;
-  }
-  .arrow-position {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .filter-icon-container {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .text-position {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .invisible {
-    opacity: 0;
-    pointer-events: none; /* Disable pointer events when invisible */
-  }
-
-  .card-content {
-    width: calc(100% + 250px);
-    // background-color: yellow;
-    // margin-left: 30px;
-  }
-  .info {
-    min-width: 40ch;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 944px) and (max-width: 1177px) {
-  .grid {
-    width: calc(100% + 350px);
-    // background-color: yellow;
-    padding-right: 300px;
-    margin-left: 30px;
-  }
-  .scrollmenu {
-    overflow-x: auto;
-    white-space: nowrap;
-    // position: absolute;
-  }
-  .arrow-position {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .filter-icon-container {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .text-position {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .invisible {
-    opacity: 0;
-    pointer-events: none; /* Disable pointer events when invisible */
-  }
-
-  .card-content {
-    width: calc(100% + 250px);
-    // background-color: red;
-    // margin-left: 30px;
-  }
-  .info {
-    min-width: 40ch;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1178px) and (max-width: 1264px) {
-  .scrollmenu {
-    overflow-x: auto;
-    white-space: nowrap;
-    // position: absolute;
   }
   .arrow-position {
     transition: opacity 0.3s ease-in-out;
@@ -400,18 +322,73 @@ tbody tr td:nth-child(5) + td {
     pointer-events: none;
   }
 
-  // }
+  .card-content {
+    width: calc(100% + 250px);
+  }
+  .info {
+    min-width: 40ch;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 944px) and (max-width: 1177px) {
   .grid {
-    width: calc(100% + 200px);
-    // background-color: pink;
-    padding-right: 150px;
-    margin-left: 35px;
-    // overflow-x: auto;
+    width: calc(100% + 350px);
+    padding-right: 300px;
+    margin-left: 30px;
+  }
+  .scrollmenu {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .card-content {
+    width: calc(100% + 250px);
+  }
+  .info {
+    min-width: 40ch;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1178px) and (max-width: 1264px) {
+  .scrollmenu {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .arrow-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .filter-icon-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .text-position {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .grid {
+    width: calc(100% + 200px);
+    padding-right: 150px;
+    margin-left: 35px;
+  }
+  .card-content {
     width: calc(100% + 100px);
-    // background-color: red;
   }
   .table-container {
     margin-right: 25px;
@@ -422,13 +399,8 @@ tbody tr td:nth-child(5) + td {
   }
 }
 @media screen and (min-width: 1265px) {
-  // .filter-icon-container {
-  // }
   .grid {
     width: 100%;
-    // background-color: blue;
-    // display: flex;
-    // margin-left: -20px;
     padding-left: -10px;
     padding-right: 38px;
   }
@@ -440,8 +412,6 @@ tbody tr td:nth-child(5) + td {
     margin-right: 3rem;
     min-width: 530px;
     width: 100%;
-
-    // background-color: blue;
     padding: 8px;
     margin-right: 20px;
   }
@@ -450,6 +420,14 @@ tbody tr td:nth-child(5) + td {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    // background-color: yellow;
+  }
+  .arrow-position {
+    visibility: visible;
+  }
+  .filter-icon-container {
+    visibility: visible;
+  }
+  .text-position {
+    visibility: visible;
   }
 }

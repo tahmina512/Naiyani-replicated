@@ -26,7 +26,6 @@ const appRoutes: Routes = [
   {
     path: 'help',
     component: HelpPageComponent,
-    data: { returnUrl: '/' },
   },
   {
     path: 'terms',
