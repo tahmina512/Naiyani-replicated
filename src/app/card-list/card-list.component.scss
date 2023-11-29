@@ -43,7 +43,6 @@
   opacity: 1;
   //  z-index: 2;
 }
-
 .text-position {
   position: absolute;
   top: 70px;
@@ -99,7 +98,6 @@
   // background-color: #548235;
   width: auto;
   // overflow-x: auto;
-
 }
 
 .grid {
@@ -290,7 +288,7 @@ tbody tr td:nth-child(5) + td {
     width: calc(100% + 2px);
     // background-color: orange;
   }
-  div.scrollmenu {
+  .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
     // position: absolute;
@@ -316,7 +314,7 @@ tbody tr td:nth-child(5) + td {
     padding-right: 300px;
     margin-left: 30px;
   }
-  div.scrollmenu {
+  .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
     // position: absolute;
@@ -352,7 +350,7 @@ tbody tr td:nth-child(5) + td {
     padding-right: 300px;
     margin-left: 30px;
   }
-  div.scrollmenu {
+  .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
     // position: absolute;
@@ -383,7 +381,7 @@ tbody tr td:nth-child(5) + td {
 }
 
 @media screen and (min-width: 1178px) and (max-width: 1264px) {
-  div.scrollmenu {
+  .scrollmenu {
     overflow-x: auto;
     white-space: nowrap;
     // position: absolute;

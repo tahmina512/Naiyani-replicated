@@ -11,7 +11,9 @@ export class PolicyComponent {
   constructor(private router: Router, private location: Location) {}
   onPreviousPage() {
     // this.router.navigate(['']);
-    this.location.back();
+    // this.location.back();
+    this.router.navigate(['/sign-up']);
+
   }
   helpPage() {
     this.router.navigate(['/help']);

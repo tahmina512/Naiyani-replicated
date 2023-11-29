@@ -15,8 +15,6 @@ import { HelpPageComponent } from './help-page/help-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PolicyComponent } from './policy/policy.component';
 import { TermsComponent } from './terms/terms.component';
-import { ImageZoomComponent } from './image-zoom/image-zoom.component';
-import { MatGridComponent } from './mat-grid/mat-grid.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +28,6 @@ import { MatGridComponent } from './mat-grid/mat-grid.component';
     HelpPageComponent,
     PolicyComponent,
     TermsComponent,
-    ImageZoomComponent,
-    MatGridComponent,
   ],
   imports: [
     BrowserModule,

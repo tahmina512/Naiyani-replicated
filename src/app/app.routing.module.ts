@@ -9,8 +9,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HelpPageComponent } from './help-page/help-page.component';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
-import { ImageZoomComponent } from './image-zoom/image-zoom.component';
-import { MatGridComponent } from './mat-grid/mat-grid.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -38,16 +36,6 @@ const appRoutes: Routes = [
     path: 'policy',
     component: PolicyComponent,
   },
-  {
-    path: 'image',
-    component: ImageZoomComponent,
-  },
-  
-    {
-    path: 'mat-grid',
-    component: MatGridComponent,
-  },
-  
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

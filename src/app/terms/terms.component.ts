@@ -9,7 +9,8 @@ import { Location } from '@angular/common';
 export class TermsComponent {
   constructor(private router: Router, private location: Location) {}
   onPreviousPage() {
-    this.location.back();
+    // this.location.back();
+    this.router.navigate(['/sign-up']);
   }
   helpPage() {
     this.router.navigate(['/help']);
