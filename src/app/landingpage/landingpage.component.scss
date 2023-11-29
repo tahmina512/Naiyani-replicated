@@ -37,18 +37,16 @@
 
 .filter-dropdown {
   z-index: 2;
-  // background-color: red;
 }
 .filter-dropdown a {
   color: black;
   text-align: center;
   font-family: "Calibri-Bold", sans-serif;
   font-size: 18px;
-  white-space: nowrap; /* Prevent line breaks */
+  white-space: nowrap;
   text-decoration: none;
 }
 .hover-effect:hover {
-  // box-shadow: none;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 .container {
@@ -76,8 +74,6 @@
   width: 100%;
   padding-right: 0;
   animation: linearwipe 2s steps(200, end);
-
-  // background-color: yellow;
 }
 @keyframes linearwipe {
   from {
@@ -209,8 +205,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #595959; /* Change this to the background color you want */
-  border-radius: 50%; /* Makes the background circular */
+  background-color: #595959;
+  border-radius: 50%;
   height: 52px;
   width: 52px;
   margin-left: -10px;
@@ -285,7 +281,6 @@
 .arrow-animation .arrow-path {
   animation: revealArrow 2.5s linear forwards infinite;
   animation-delay: 3s;
-  // clip-path: inset(0px 100% 0px 0px);
   transform-origin: left;
 }
 

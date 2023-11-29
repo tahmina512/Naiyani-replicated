@@ -69,12 +69,10 @@
 }
 
 .hover-effect:hover {
-  // box-shadow: none;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .svg-filter {
-  // background-color: red;
   height: 52px;
   width: 52px;
   border-radius: 50%;
@@ -84,14 +82,12 @@
 
 .filter-dropdown {
   z-index: 2;
-  // background-color: red;
 }
 .filter-dropdown a {
   color: black;
-  // text-align: center;
   font-family: "Calibri-Bold", sans-serif;
   font-size: 18px;
-  white-space: nowrap; /* Prevent line breaks */
+  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -109,9 +105,6 @@ span {
   }
 }
 
-// mat-accordion {
-//   background-color: green;
-// }
 .expansion-panel {
   height: 100vh;
   // margin-top: 25px;
@@ -125,15 +118,9 @@ span {
 mat-expansion-panel {
   box-shadow: none !important; // Remove box shadow
   background-color: white;
-
-  //  padding-bottom: 0!important;
-
-  // height: 8rem;
-  // height: 6rem;
 }
 mat-expansion-panel-header {
   border-radius: 0;
-  // background-color: red;
   height: auto;
   border-top: 1px solid black; // Top border color
   // border-bottom: 1px solid red; // Bottom border color
@@ -162,11 +149,6 @@ p {
   border-bottom: 1px solid black; // Top border color
 }
 @media screen and (max-width: 768px) {
-  // .banner-container {
-  //   // bottom: 50px;
-  //   height: 30vh;
-  //   // background-color: yellow;
-  // }
   mat-expansion-panel-header:hover {
     padding-top: 5rem;
   }

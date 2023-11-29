@@ -16,7 +16,6 @@ export class LandingpageComponent implements OnInit {
   moveLogo: boolean = false;
   showDiv: Boolean = false;
   showIcons: Boolean = false;
-
   isUserVisible: Boolean = false;
   isPasswordVisible: Boolean = false;
   usernameValue: string = '';
@@ -24,6 +23,7 @@ export class LandingpageComponent implements OnInit {
 
   @ViewChild('usernameInput', { static: false }) usernameInput: ElementRef;
   @ViewChild('passwordInput', { static: false }) passwordInput: ElementRef;
+  //show animation of text, rectangular border and move up
   ngOnInit(): void {
     setTimeout(() => {
       this.showDiv = true;
@@ -40,25 +40,22 @@ export class LandingpageComponent implements OnInit {
 
       myDiv.classList.add('show-border');
     }, 9500);
-    // setTimeout(() => {
-    //   this.router.navigate(['/database-btn']);
-    // }, 21000);
   }
+  //clicking animated next arrow button navigate to next page
   login() {
-    console.log('Login function called');
-
     this.router.navigate(['/database-btn']);
   }
+  //clicks on username div,username input  box will be visible to type
   showUserBox(inputType: string) {
     if (inputType === 'username') {
       this.isUserVisible = true;
     }
-
+    //to complete the transition from clicking the button and showing the input box before typing.
     setTimeout(() => {
       this.usernameInput.nativeElement.focus();
     });
   }
-
+  //same for the password
   showPasswordBox(inputType: string) {
     if (inputType === 'password') {
       this.isPasswordVisible = true;
@@ -67,6 +64,7 @@ export class LandingpageComponent implements OnInit {
       });
     }
   }
+  //when there is no value in input boxes, and user click outside the box, it will hide the input box and show the black background for the div here
   handleInputFocusout(inputType: string, event: FocusEvent): void {
     if (inputType === 'username') {
       const inputElement = event.target as HTMLInputElement;

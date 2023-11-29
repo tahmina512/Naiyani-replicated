@@ -61,10 +61,9 @@
 }
 .filter-dropdown a {
   color: black;
-  // text-align: center;
   font-family: "Calibri-Bold", sans-serif;
   font-size: 18px;
-  white-space: nowrap; /* Prevent line breaks */
+  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -76,7 +75,6 @@
   // font-size: 26px;
   font-size: clamp(2.8rem, 3.5vw, 3rem);
   letter-spacing: 1px;
-  // animation: appearButtons 3s ease forwards;
 }
 @keyframes appearButtons {
   0% {

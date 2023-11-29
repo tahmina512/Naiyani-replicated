@@ -30,7 +30,7 @@ export class CardListComponent implements OnInit {
     private renderer: Renderer2,
     private cdr: ChangeDetectorRef
   ) {}
-
+  //scrolly at the top makes icons invisible
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
     const isScrollMenu = (event.target as HTMLElement).classList?.contains(
@@ -42,14 +42,14 @@ export class CardListComponent implements OnInit {
 
       this.isScrolledAtTop = scrollY === 0;
 
-       this.cdr.detectChanges();
+      this.cdr.detectChanges();
     }
   }
   calculateVisibleHeight(): string {
     const windowHeight = window.innerHeight;
     return `${windowHeight}px`;
   }
-
+  //place horizontal scroller at the bottom of the resized window
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     this.updateHorizontalScrollerHeight();
@@ -109,11 +109,12 @@ export class CardListComponent implements OnInit {
   helpPage() {
     this.router.navigate(['/help']);
   }
+  //hover on the thumbnails to see the full image
   setHover(value: boolean, index: number) {
     this.isHovered = value;
     this.hoveredProductIndex = value ? index : null;
   }
-
+  //hide the image after clicking close button
   hideImage() {
     this.isHovered = false;
     this.hoveredProductIndex = null;

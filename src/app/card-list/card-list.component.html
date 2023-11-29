@@ -1,9 +1,8 @@
-<div class="banner-container"   >
+<div class="banner-container">
   <div
     class="scrollmenu"
     [style.height]="calculateVisibleHeight()"
     (scroll)="onScroll($event)"
-    
   >
     <button
       mat-fab
@@ -11,7 +10,6 @@
       (click)="onPreviousPage()"
       [class.invisible]="!isScrolledAtTop"
     >
-      <!-- <mat-icon  class="large-icon">arrow_back</mat-icon> -->
       <svg
         fill="none"
         height="30"
@@ -37,9 +35,8 @@
       xPosition="before"
       yPosition="below"
       class="filter-icon-container hover-effect"
-     [class.invisible]="!isScrolledAtTop"
+      [class.invisible]="!isScrolledAtTop"
     >
-      <!-- <i class="fa fa-sliders fa-flip-both fa-2xl" style="color: white"></i> -->
       <svg
         class="svg-filter"
         xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +92,6 @@
 
     <div class="container">
       <div *ngIf="product.length > 0">
-        <!-- <mat-card *ngIf="product && product.length > 0" class="grid"> -->
         <mat-card *ngFor="let product of product; let i = index" class="grid">
           <mat-card-content class="card-content">
             <div
@@ -179,7 +175,8 @@
                 <tbody>
                   <tr>
                     <td>Amazon Price: {{ product.Amazon_Price }}</td>
-                    <!-- <td>
+                    <!-- without circular border around eye icon
+                      <td>
                   <a [href]="product.Amazon_URL" target="_blank"
                     ><i
                       class="fa fa-eye"
@@ -222,7 +219,7 @@
                   </tr>
                   <tr>
                     <td>Sourcing Price: {{ product.Sourcing_Price }}</td>
-                    <!-- <td>
+                    <!-- without circular border with eye icon<td>
                     <a [href]="product.Sourcing_URL" target="_blank"
                     ><i
                       class="fa fa-eye"

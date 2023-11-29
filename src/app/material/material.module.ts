@@ -1,3 +1,4 @@
+//module for all components of material ui so on app module there will be less load
 import { NgModule } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,7 +24,6 @@ const MaterialComponents = [
   MatTooltipModule,
   MatGridListModule,
 ];
-
 @NgModule({
   declarations: [],
   imports: [MaterialComponents],

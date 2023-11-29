@@ -1,24 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-database-list',
   templateUrl: './database-list.component.html',
   styleUrls: ['./database-list.component.scss'],
 })
-export class DatabaseListComponent implements OnInit {
+export class DatabaseListComponent {
   constructor(private router: Router) {}
-  ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.router.navigate(['/info']);
-    // }, 6000);
-  }
   onPreviousPage() {
     this.router.navigate(['/database-btn']);
   }
+  //View ALl button will show all product details
   ViewAllSection() {
     this.router.navigate(['/product-list']);
   }
+  //for specific product (Books) just for now will show only layout
   ViewSection() {
     this.router.navigate(['/database-table']);
   }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-database-table',
   templateUrl: './database-table.component.html',
